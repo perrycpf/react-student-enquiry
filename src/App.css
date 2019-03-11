@@ -1,33 +1,82 @@
-.App {
-  text-align: center;
+.container {
+  margin: auto;
+  margin-top: 5%;
+  background-color: #FFF;
+  overflow-y: auto;
+  position: relative;
+  width: 80%;
+  height: 80vh;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.student-info h1 {
+  font-size: 320%;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  line-height: 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.student-info p {
+  margin-bottom:0;
+  margin-left: 20px;
+  line-height:8px;
+}
+.additional-info {
+  margin-top: 35px;
+  margin-bottom: 0px;
+  line-height: 8px;
+}
+.add-tag {
+  padding: 10px;
+  border: 1px solid #FFF;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  width: 200px;
+  outline: none;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.inputSearch {
+  padding: 12px;
+  border: 1px solid #fff;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  width: 95%;
+  font-size: 17px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.inputSearch:hover, .add-tag:hover {
+  border-bottom: 1px solid darkslategrey;
+}
+.tags {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  margin: 0px, 20px, 0px, 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.tag {
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 20px;
+  color:rgb(124, 124, 124);
+  background-color: #F0F0F0;  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.student {
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "pic info more-info";
+  grid-template-columns: .2fr 1.5fr .0.5fr;
+}
+.student img {
+  grid-area: pic;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  border: 1px solid rgb(216, 215, 215);
+  margin-right: 20px;
+}
+.expand button {
+  font-size: 400%;
+  font-weight: bolder;
+  color: darkslategrey;
+  border: none;
+  background-color: white;
+  outline: none;
+  min-width: 40px;
 }
