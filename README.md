@@ -6,7 +6,7 @@ A React-based Student Enquiry application. This application was using React comp
 
 ## Demo
 
-*(React) Student Enquiry* is deployed to Heroku. Please check it out [here](https://fathomless-falls-68758.herokuapp.com/)
+*(React) Student Enquiry* is deployed to Heroku. Please check it out [here](https://thawing-garden-42155.herokuapp.com/)
 
 ## Running locally
 
